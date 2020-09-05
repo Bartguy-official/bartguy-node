@@ -2,19 +2,61 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
     <meta
+      data-react-helmet="true"
       name="description"
-      content="Web site created using create-react-app"
+      content="Bartguy - classified ads from everywhere for batering of goods like furniture, electronics , toys , books and many more. Lets start recycling resources!"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <meta
+      name="keywords"
+      content="classified ads, barter system, barter books, barter goods, bartguy goods, furniture, gym equipment"
+    />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta http-equiv="cleartype" content="on" />
+    <meta name="HandheldFriendly" content="True" />
+
+    <title>
+      Bartguy - classified ads from everywhere for batering of goods
+    </title>
+
+    <!-- fonts files -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin:400,500,400italic,600,600italic,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/jquery.bxslider.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/rs-plugin/css/settings.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/prettyPhoto.css" />
+    <script type="text/javascript" src="assets/js/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -39,5 +81,84 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <!-- JS Files -->
+    <script>
+      $(function () {
+        $("#slider-range").slider({
+          range: true,
+          min: 150,
+          max: 1500,
+          values: [520, 1100],
+          slide: function (event, ui) {
+            $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+          },
+        });
+        $("#amount").val(
+          "$" +
+            $("#slider-range").slider("values", 0) +
+            " - $" +
+            $("#slider-range").slider("values", 1)
+        );
+      });
+    </script>
+
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/lightbox.min.js"></script>
+    <script
+      type="text/javascript"
+      src="assets/js/jquery.elevatezoom.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/jquery.bxslider.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".slider8").bxSlider({
+          mode: "vertical",
+          slideWidth: 300,
+          minSlides: 3,
+          slideMargin: 10,
+        });
+        $(".slider9").bxSlider({
+          mode: "vertical",
+          slideWidth: 300,
+          minSlides: 3,
+          slideMargin: 10,
+        });
+        $(".slider10").bxSlider({
+          mode: "vertical",
+          slideWidth: 300,
+          minSlides: 3,
+          slideMargin: 10,
+        });
+      });
+    </script>
+    <script
+      type="text/javascript"
+      src="assets/js/bootstrap-select.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/rs-plugin/js/jquery.themepunch.plugins.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js"
+    ></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/prettyPhoto.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      function nabit() {
+        $("#the_message").slideUp(2000);
+      }
+    </script>
+
+    <!--Opacity & Other IE fix for older browser-->
+    <!--[if lte IE 8]>
+      <script type="text/javascript" src="/js/ie-opacity-polyfill.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="assets/js/main.js"></script>
   </body>
 </html>

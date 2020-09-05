@@ -20,7 +20,7 @@ function HomePromotion(props) {
                 </div>
                 <div className="col-md-3 col-sm-3 col-xs-12">
                   <div className="single_call_action">
-                    <img src="/img/world.png" />
+                    <img src="assets/img/world.png" />
                     <p>
                       Worldwide <br />
                       connections
@@ -29,7 +29,7 @@ function HomePromotion(props) {
                 </div>
                 <div className="col-md-3 col-sm-3 col-xs-12">
                   <div className="single_call_action">
-                    <img src="/img/discount.png" />
+                    <img src="assets/img/discount.png" />
                     <p>
                       Auto offers on
                       <br />
@@ -39,7 +39,7 @@ function HomePromotion(props) {
                 </div>
                 <div className="col-md-3 col-sm-3 col-xs-12">
                   <div className="single_call_action last_single_call">
-                    <img src="/img/return.png" />
+                    <img src="assets/img/return.png" />
                     <p>Joys of Barter System</p>
                   </div>
                 </div>
