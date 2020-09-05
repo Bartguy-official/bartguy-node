@@ -13,8 +13,14 @@ Contribute to the platform and let bartering be an alternate economy.
 
 This solution is built on MERN stack
 
+Install the dependencies with this command
 ```bash
 npm install
+```
+
+Comamnd to run the project
+```bash
+npm run server
 ```
 
 ## Contributing
