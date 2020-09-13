@@ -1,8 +1,9 @@
 import React from "react";
-import Countries from './home/countries';
+import Countries from "./home/countries";
+import States from "./home/states";
+import Cities from "./home/cities";
 
 function UploadProduct(props) {
-
   return (
     <div>
       <link rel="stylesheet" href="/css/jqcloud.scss" />
@@ -133,69 +134,13 @@ function UploadProduct(props) {
                     ></div>
                   </div>
                   <div className="country_select">
-                    <p>
-                      Country *
-                      <span
-                        style={{
-                          color: "red",
-                          fontWeight: "bold",
-                          display: "none",
-                        }}
-                        id="country_rule"
-                      >
-                        {" "}
-                        (please choose the country)
-                      </span>
-                    </p>
                     <Countries></Countries>
                   </div>
                   <div className="country_select">
-                    <p>
-                      State *
-                      <span
-                        style={{
-                          color: "red",
-                          fontWeight: "bold",
-                          display: "none",
-                        }}
-                        id="state_rule"
-                      >
-                        {" "}
-                        (please choose the state)
-                      </span>
-                    </p>
-                    <select
-                      name="state_id"
-                      id="product_state"
-                      className="form-control sel_state"
-                      onChange={populateCities}
-                    >
-                      <option value>Choose State</option>
-                    </select>
+                    <States></States>
                   </div>
                   <div className="country_select">
-                    <p>
-                      City *
-                      <span
-                        style={{
-                          color: "red",
-                          fontWeight: "bold",
-                          display: "none",
-                        }}
-                        id="city_rule"
-                      >
-                        {" "}
-                        (please choose the city)
-                      </span>
-                    </p>
-                    <select
-                      name="city_id"
-                      id="product_city"
-                      style={{ color: "#999999" }}
-                      className="form-control sel_state"
-                    >
-                      <option value>Choose City</option>
-                    </select>
+                    <Cities></Cities>
                   </div>
                   <div className="country_select">
                     <p>How Old</p>
@@ -282,7 +227,6 @@ function UploadProduct(props) {
 }
 
 function uploadProducts() {}
-
 
 function populateCities() {}
 
