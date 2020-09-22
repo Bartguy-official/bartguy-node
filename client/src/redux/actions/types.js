@@ -7,3 +7,5 @@ export const COUNTRY_CHANGED = "COUNTRY_CHANGED";
 export const STATE_CHANGED = "STATE_CHANGED";
 
 export const POPULATE_STATES = "POPULATE_STATES";
+
+export const GET_PAGE_DATA = "GET_PAGE_DATA";

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Login() {
+function Register() {
   return (
     <>
       <div class="breadcumb_area">
@@ -9,12 +9,12 @@ function Login() {
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="bread_box">
                 <ul class="breadcumb">
-                  <li class="active">
+                  <li>
                     <a href="/users/login">
                       Login<span>|</span>
                     </a>
                   </li>
-                  <li>
+                  <li class="active">
                     <a href="/users/register">Register</a>
                   </li>
                 </ul>
@@ -28,7 +28,7 @@ function Login() {
           <div class="row">
             <div class="col-md-9 col-sm-8 col-xs-12">
               <div class="checkout_left">
-                <h2>Login</h2>
+                <h2>Register</h2>
                 <div class="dotted_line"></div>
                 <div class="checkout_form">
                   <div class="company_name">
@@ -37,14 +37,14 @@ function Login() {
                         href="/users/login/facebook"
                         class="btn btn-primary btn-block"
                       >
-                        <i class="fa fa-facebook"></i> Sign in with{" "}
+                        <i class="fa fa-facebook"></i> Sign up with{" "}
                         <b>Facebook</b>
                       </a>
                       <a
-                        href="/users/login/facebook"
+                        href="/users/login/google"
                         class="btn btn-danger btn-block"
                       >
-                        <i class="fa fa-google"></i> Sign in with <b>Google</b>
+                        <i class="fa fa-google"></i> Sign up with <b>Google</b>
                       </a>
                     </div>
                   </div>
@@ -57,5 +57,4 @@ function Login() {
     </>
   );
 }
-
-export default Login;
+export default Register;

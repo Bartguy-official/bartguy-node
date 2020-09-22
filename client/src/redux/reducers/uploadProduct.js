@@ -40,6 +40,5 @@ export default function (state = initialState, action) {
     default:
       return state;
   }
-  console.log(nextState);
   return nextState;
 }
